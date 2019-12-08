@@ -1,0 +1,35 @@
+import React from 'react'
+import { Router, Scene } from 'react-native-router-flux'
+import Home from './Home.js'
+import About from './About.js'
+import image from './latihan/chapter3/image.js'
+import tesstate from './latihan/chapter3/tesstate.js'
+import tesprops from './latihan/chapter3/tesprops.js'
+import tesview from './latihan/chapter4/tesview.js'
+import tesimage from './latihan/chapter4/tesimage.js'
+import AppContainer from './latihan/advance/AppContainer.js'
+import tesscrollview from './latihan/chapter4/tesscrollview.js'
+import tesstyle from './latihan/chapter4/tesstyle.js'
+import tesfixed from './latihan/chapter4/tesfixed.js'
+import tesflexdim from './latihan/chapter4/tesflexdim.js'
+
+
+const Routes = () => (
+<Router>
+<Scene key = "root">
+<Scene key = "home" component = {Home} title = "Home" initial = {true} />
+<Scene key = "about" component = {About} title = "About" />
+<Scene key = "image" component = {image} title = "image"/>
+<Scene key = "tesstate" component = {tesstate} title = "tesstate"/>
+<Scene key = "tesprops" component = {tesprops} title = "tesprops"/>
+<Scene key = "tesview" component = {tesview} title = "tesview"/>
+<Scene key = "tesimage" component = {tesimage} title = "tesimage"/>
+<Scene key = "AppContainer" component = {AppContainer} title = "AppContainer"/>
+<Scene key = "tesscrollview" component = {tesscrollview} title = "tesscrollview"/>
+<Scene key = "tesstyle" component = {tesstyle} title = "tesstyle"/>
+<Scene key = "tesfixed" component = {tesfixed} title = "tesfixed"/>
+<Scene key = "tesflexdim" component = {tesflexdim} title = "tesflexdim"/>
+</Scene>
+</Router>
+)
+export default Routes
